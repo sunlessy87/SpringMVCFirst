@@ -26,4 +26,9 @@ public class OrderController {
         model.addAttribute("orderList", orders);
         return "order";
     }
+
+    @RequestMapping(value = "/add-new-order", method=RequestMethod.GET)
+    public String addNewOrderPage() {
+        return "addNewOrder";
+    }
 }
